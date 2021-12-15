@@ -1,0 +1,29 @@
+GET http://localhost:8000/api/V1/articles
+
+###
+
+POST http://localhost:8000/api/V1/articles
+Content-Type: application/json
+
+{
+    "title": "My brand new title",
+    "body": "My brand new content"
+}
+
+###
+
+PUT http://localhost:8000/api/V1/articles/51
+Content-Type: application/json
+
+{
+    "title": "My brand new title (updated)",
+    "body": "My brand new content (updated)"
+}
+
+###
+
+DELETE http://localhost:8000/api/V1/articles/4
+
+
+###
+GET http://localhost:8000/api/V1/articles/51

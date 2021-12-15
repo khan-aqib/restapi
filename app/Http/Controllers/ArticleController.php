@@ -15,7 +15,7 @@ class ArticleController extends Controller
  
     public function show($id)
     {
-        return Article::find($id)->toJson();
+        return Article::find($id);
     }
 
     public function store(Request $request)
